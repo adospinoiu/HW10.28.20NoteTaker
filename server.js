@@ -15,7 +15,7 @@ app.use(express.static("public"));
 app.use(morgan('tiny'));
 
 // Routes
-app.use("/api", apiRoutes);
+// app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
 
 // Start up the server
