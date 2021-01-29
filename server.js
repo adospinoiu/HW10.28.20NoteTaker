@@ -14,8 +14,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(morgan('tiny'));
 
-// Routes
+// Routes (html and api)
 // app.use("/api", apiRoutes);
+require("./routes/apiRoutes")(app);
 app.use("/", htmlRoutes);
 
 // Start up the server
